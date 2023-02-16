@@ -1,0 +1,12 @@
+<form method="post" action="/staff/<%= staff.id %>/update" enctype="multipart/form-data">
+    <div class="form-group">
+        <label>Name</label>
+        <input type="text" class="form-control" value="<%= staff.Name %>" name="Name">
+    </div>
+    <div class="form-group">
+        <label>Image</label>
+        <input type="file" value="<%= staff.Image %>" class="form-control" name="Image">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
